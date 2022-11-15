@@ -1015,10 +1015,11 @@ opacity: 0;
     transform: translate(-50%, -50%);
 }
 
-  .modal:hover .button-close {
+   .button-close:hover {
     fill: #2196F3;
     cursor: pointer;
   }
+
 
    /*  ФОРМА МОДАЛЬНОГО ВІКНА */
 
@@ -1030,7 +1031,6 @@ text-align: center;
 color:var(--brend-text-color);
    }
 
-
    .modal-text {
    display: inline-flex;
    justify-content: center;
@@ -1039,8 +1039,6 @@ color:var(--brend-text-color);
    margin-left: 40px;
    padding-top: 40px;
 }
-
-
 
 .form-communication .title {
 display: block;
@@ -1064,7 +1062,7 @@ height: 581px;
     display: flex;
     position: relative;
     flex-direction: column;
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -1081,7 +1079,6 @@ height: 581px;
     margin-top: 4px;
 }
 
-
 .form-field input:hover,
 .form-field input:focus {
     border: 1px solid #2196F3;
@@ -1091,12 +1088,15 @@ height: 581px;
 }
 
 .form-svg {
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 42%;
     color: var(--brend-text-color);
 }
 
 .form-field:hover,
 .form-field:active {
-    
     border-radius: 4px;
     cursor: pointer;
     fill: var(--accent-color);
@@ -1139,13 +1139,6 @@ height: 581px;
         border-color:var(--accent-color);  
     }
 
-  .form-svg {
-    display: inline-block;
-    position: absolute;
-    left: 12px;
-    top: 38%;
-}
-
 .textarea-input {
     margin-bottom: 20px;
     margin-top: 4px;
@@ -1163,6 +1156,7 @@ height: 581px;
     line-height: 1.71;
     color: #757575;
     margin-right: auto;
+    margin-bottom: 30px;
    }
 
      .checkbox {
@@ -1201,6 +1195,7 @@ height: 581px;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px; 
+    margin-right: 7px;
     }
 
 .link-contract {
@@ -1234,8 +1229,7 @@ height: 581px;
     text-align: center;
     left: 32%;
     bottom: 40px;
-    margin-top: 26px;
-}
+    }
 
 .form-button:hover {
     background: #188CE8;
